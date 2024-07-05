@@ -31,3 +31,8 @@ Tecnologías Empleadas:
 
 # [![Sin-t-tulo.png](https://i.postimg.cc/ryf5jtSZ/Sin-t-tulo.png)](https://postimg.cc/9zq4F0gy)
 
+Primer Test: 
+El test de validación de datos de la alarma implementa varias pruebas unitarias para la función set_alarm. Verifica que la función maneje correctamente diferentes escenarios de entrada: datos válidos, datos faltantes, tipos de datos incorrectos y formatos de tiempo inválidos. Cada prueba específica revisa que la función set_alarm valide los datos de entrada según los requisitos establecidos (como la presencia de todas las claves necesarias y la correcta validación de tipos y formatos de datos). Si los datos son válidos, la función debería ejecutar sin problemas, y si no lo son, debería lanzar las excepciones adecuadas (ValueError o TypeError), asegurando así la robustez y fiabilidad de la función.
+
+Segundo Test:
+Este test de unidad utiliza el módulo unittest junto con unittest.mock.patch para verificar que la clase MainWindow del archivo Principal.PrincCode llama correctamente a QProcess.startDetached cuando se abren diferentes funcionalidades (temporizador, alarma y pomodoro) a través de sus respectivos botones. Cada prueba crea una instancia de MainWindow, simula un clic en el botón correspondiente (temporizador, alarma o pomodoro) y luego comprueba que QProcess.startDetached fue llamado con los argumentos esperados, que son la ruta del ejecutable de Python y la ruta del script correspondiente (TempoCode.py, AlarmCode.py o PomodoroCode.py). Esto asegura que al presionar cada botón, la aplicación lanza el script adecuado correctamente.
